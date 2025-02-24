@@ -1,0 +1,51 @@
+.search-pg{
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    display: none;
+}
+.cards-cont.search{
+    margin-bottom: 0;
+}
+.head-search{
+    margin:1em;
+}
+.h-hasil{
+    font-size: 14px;
+}
+.he-cari{
+    font-size: 14px;
+}
+.empty-items{
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em;
+
+}
+.head-hasil {
+    float: left;
+ 
+    background: green;
+    padding: 5px;
+    border-radius: 13px;
+    text-align: center;
+    font-size: 16px;
+    color:white;
+    margin: 1em;
+}
+.search-sec{
+    overflow: hidden;
+}
+
+@media (max-width: 796px){
+    .search-pg{
+        display: flex;
+    }
+    .search-sec{
+        margin-bottom: 10em;
+    }
+}

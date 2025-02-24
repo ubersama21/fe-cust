@@ -1,0 +1,130 @@
+.about-cont1 {
+    min-width: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10em;
+}
+.we {
+    max-width: 60%;
+    padding: 10px;
+}
+.visi-misi {
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    padding: 0.5em;
+}
+h4.vm-head {
+    transform: rotateZ(268deg);
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+}
+.vm-tag {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    /* flex-direction: row; */
+    justify-content: center;
+    max-width: 20%;
+}
+ul.ls-vm {
+    font-size: 12px;
+    text-align: justify;
+}
+.vm-cont {
+    min-width: 80%;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+}
+.about-sec {
+    overflow: hidden;
+    margin-bottom: 3em;
+}
+h4.h-we {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.about-cont2 {
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    gap: 1em;
+    padding: 10px;
+}
+.map-cont {
+    min-width: 50%;
+    min-height: 30vh;
+    border: 3px solid black;
+    border-radius: 15px;
+    box-shadow: 3px 2px 7px 3px rgb(12, 12, 12);
+}
+.btn-cont{
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button.btn-cnt.btn.btn-primary{
+    background-color: green;
+    border: 1px solid white;
+    box-shadow: 3px 5px 13px 2px green;
+
+}
+.cnt-cont {
+    min-width: 50%;
+}
+.nm-wr{
+    background-color: green;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 20px 2px green;
+    text-align: center;
+    font-weight: bold;
+}
+iframe.map-fr {
+    min-width: 100%;
+    min-height: 300px;
+}
+@media (max-width: 796px){
+    .vm-cont {
+        min-width: 80%;
+        max-width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .we {
+        max-width: 100%;
+        padding: 10px;
+        text-align: justify;
+    }
+    .about-cont2 {
+        min-width: 100%;
+        max-width: 100%;
+        display: flex
+    ;
+        gap: 1em;
+        padding: 10px;
+        flex-direction: column;
+    }
+    iframe.map-fr {
+        min-width: 100%;
+        min-height: 300px;
+    }
+    .about-cont1{
+        margin-top: 1em;
+    }
+    .cnt-cont {
+        margin-top: 1em;
+    }
+}

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards-cont{
+    margin-top: 1em;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: max-content;
+    align-content: flex-start;
+    padding-bottom: 3rem;
+    align-items: stretch;
+    margin-bottom: 7em;
+}
+button.btn-next.btn.btn-primary{
+    margin-left: 1em;
+    background-color: green;
+    border:1px solid green;
+    font-weight: normal;
+}

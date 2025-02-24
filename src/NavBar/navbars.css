@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-sec{
+    min-height: 120px;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.3); /* Background semi-transparan */
+    backdrop-filter: blur(10px); /* Efek blur di belakang elemen */
+    border-radius: 15px; /* Membuat sudut sedikit melengkung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan bayangan lembut */
+}
+.nav-cont{
+  display: none;
+}
+
+img.img-cart{
+    width: 30px;
+    height: 30px;
+}
+.input-nav{
+    margin: 0 15px;
+    border: 3px solid rgb(238, 238, 238);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    margin-left: auto;
+}
+.img-home{
+    width: 30px;
+    height: 30px;
+    
+}
+.home-nav{
+    padding: 10px;
+    border-radius: 13px;
+    /* background-color: #00d4ff; */
+}
+button.search-btn.btn.btn-primary{
+    border-radius: 0px 13px 13px 0px;
+}
+.input-nav:focus-within{
+    border-color: rgb(2, 206, 36);
+}
+.items-s{
+    outline: none;
+    border: none;
+    border-radius: 13px 0px 0px 13px;
+    padding-left: 10px;
+    text-align: left;
+}
+.logo-cont {
+    /* margin-left: auto;
+    margin-right: 30px; */
+    /* background: #00d4ff; */
+
+    padding: 10px;
+    border-radius: 13px;
+}
+.nav-cont1{
+    min-width: 90%;
+    min-height: 80px;
+    max-height: 80px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3em;
+    border-radius: 13px;
+    position: fixed;
+    z-index: 100;
+
+
+    /* margin:0 3em; */
+}
+.logo-home{
+    width: 70px;
+    height: 70px;
+    margin-left: 3em;
+}
+.navigate-cont{
+    display: flex;
+    gap:13px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+h5.active {
+    background: green;
+    padding: 3px;
+    border: 1px springgreen;
+    border-radius: 4px;
+    color: white;
+    animation:shake 1s ease-in-out forwards;
+    box-shadow: 3px 3px 10px 1px green;
+}
+@keyframes shake {
+    0%{
+        transform: scale(0);
+    }50%{
+        transform: scale(1);
+    }70%{
+        transform: translateY(5%);
+    }80%{
+        transform: translateY(-5%);
+    }100%{
+        transform: translateY(0);
+    }
+}
+.active-m {
+    background: #71cd75;
+    box-shadow: 3px 3px 12px 3px green;
+    animation:bounce 0.5s ease-in-out forwards;
+}
+
+@keyframes bounce{
+    0%{
+        transform: scale(0.3);
+    }30%{
+        transform: scale(1);
+        transform: translateY(-5%);
+    }40%{
+        transform: scale(0.5);
+        transform: translateY(5%);
+    }70%{
+        transform: scale(0);
+        transform: translateY(-5%);
+    }100%{
+        transform: scale(1);
+        transform: translateY(0);
+    }
+}
+@media (max-width: 796px) {
+    .det-cont{
+        margin-bottom: 10em !important;
+    }
+    .nav-cont{
+        display: block;
+        min-height: 80px;
+        min-width: 90%;
+        max-width: 90%;
+        /* background-color: aqua; */
+        background: rgba(255, 255, 255, 0.3); /* Background semi-transparan */
+        backdrop-filter: blur(10px); /* Efek blur di belakang elemen */
+        border-radius: 15px; /* Membuat sudut sedikit melengkung */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan bayangan lembut */
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nav-sec {
+        min-height: 120px;
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+    }
+    .input-nav{
+        margin-left: 5px;
+   
+    }
+    h5.active {
+    background: green;
+    padding: 3px;
+    border: 1px springgreen;
+    border-radius: 4px;
+    color: white;
+}
+    .logo-cont{
+        margin-left: 0;
+        /* margin-right: 30px; */
+        margin: 0;
+    }
+    .nav-cont1{
+        display: none;
+    }
+    
+}

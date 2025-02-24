@@ -1,0 +1,224 @@
+.det{
+    min-height: 100vh;
+    min-width: 100%;
+    /* overflow: hidden; */
+    /* background-color: aqua; */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.det{
+    min-height: 100vh;
+    min-width: 100%;
+    overflow: hidden;
+    margin-bottom: 10em;
+    /* background-color: aqua; */
+}
+.det-cont {
+    margin-top: 10em;
+    min-width: 100%;
+    /* min-height: 100vh; */
+    padding: 1rem;
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:1em;
+    z-index: 10;
+}
+.recipe-cont {
+    min-width: 100%;
+    display: flex
+;
+    min-height: 150px;
+    /* background-color: antiquewhite; */
+    border: 1px solid;
+    border-radius: 13px;
+}
+/* From Uiverse.io by benjimich */ 
+.load-cont{
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    flex-direction: column;
+    align-items: center;
+}
+.loader-rec {
+    width: 200px;
+    height: 10px;
+    background: #004643;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 3px 3px 13px 1px green;
+  }
+  
+  .inner_loader {
+    width: 60%;
+    height: 100%;
+    background: green;
+    border-radius: 50px;
+    animation: moveLeftRight 3s ease-in-out infinite;
+  }
+  
+  @keyframes moveLeftRight {
+    0% {
+      transform: translateX(calc(-100% + 10px));
+    }
+  
+    50% {
+      transform: translateX(calc(200px - 10px));
+    }
+  
+    100% {
+      transform: translateX(calc(-100% + 10px));
+    }
+  }
+.cont-img{
+  min-width: 50%;
+  min-height: 400px;
+  max-height: 300px;
+  /* background-color: red; */
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  
+}
+img.img-brng {
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+}
+.car-container {
+    min-width: 100%;
+    min-height: 400px;
+    background-color: antiquewhite;
+    max-height: 400px;
+    max-width: 100%;
+    border-radius: 13px;
+}
+.dtx-title{
+    margin-top: 3rem;
+}
+p{
+    margin: 0;
+}
+span.harga-brng {
+    color: green;
+}
+span.status.ada{
+    padding: 4px;
+    background-color: green;
+    text-align: center;
+    color:white;
+    border-radius: 5px;
+}
+span.status.habis{
+    padding: 4px;
+    background-color: red;
+    color:white;
+    border-radius: 5px;
+}
+.item-d{
+    max-width: 30%;
+    min-width: 30%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border:1px solid black;
+    border-radius: 30px;
+    text-align: left !important;
+    /* background-color:lightsalmon; */
+}
+.btn-det{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: stretch;
+    margin-top: 1rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap:1em;
+}
+.cont-desk{
+    min-width: 100%;
+    min-height: 10vh;
+    /* background-color: red; */
+    max-height: 18vh;
+    overflow-y: auto;
+    padding: 0.2rem;
+    font-size: 16px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+.tag-rec{
+    background-color: green;
+    max-width: max-content;
+    padding: 10px;
+    border-radius: 13px;
+    margin-left: 1em;
+    font-size: 12px;
+    color: white;
+}
+
+.items-cont-rec {
+    min-width: 100%;
+    min-height: 300px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+button.btn-add-krj.btn.btn-primary{
+    width: 100%;
+    background-color: green;
+    margin: .3em 0;
+    border:1px solid green;
+}
+.recipe-cont{
+    min-width: 100%;
+    display: flex;
+    min-height: 150px;
+    /* background-color: antiquewhite; */
+}
+.recipe-sec{
+    margin:1em 0.3em;
+}
+@media (max-width: 800px) {
+    .det-cont{
+        margin-top: 1em;
+        margin-bottom: 1em !important;
+    }
+    .cont-img {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .item-d {
+        min-width: 100%;
+        max-width: 100%;
+        text-align: left !important;
+    }
+    .btn-det{
+        margin-bottom: 8em;
+    }
+    .recipe-cont{
+        min-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .recipe-sec{
+        margin:1em 0.3em;
+    }
+}
