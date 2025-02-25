@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { GoogleGenerativeAI } from '@google/generative-ai'
-import { json } from 'body-parser'
-import { error } from 'console'
+
+
 const URLAPI = process.env.REACT_APP_API || 'http://localhost:4544/'
 export const getItems = async(page:number,perPage:number)=>{
     try {

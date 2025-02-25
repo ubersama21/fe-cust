@@ -81,6 +81,14 @@
     border-radius: 50%;
     transform: translate(-50%, -50%);
   }
+  .btn-delete{
+    padding: 3px 10px;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+    color: white;
+    /* box-shadow: 3px 3px 3px 1px black; */
+  }
   @media (max-width: 818px){
     .cart{
         min-width: 100%;

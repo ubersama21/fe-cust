@@ -41,10 +41,10 @@ function Carts() {
         <h3 className='head-cart-tag'>Keranjang</h3>
         <div className='carts-cont'>
            {
-            carts && carts.map((data:any,i:number)=>{
+            carts && carts.length >0 && carts.map((data:any,i:number)=>{
                 return(
                     <CartItem key={'cart_shop'+data.nama} keyss={data.nama+"cart_s"} dx={data} setSelected={setSelected} selected={selected}
-                     setTotal={setTotal}
+                     setTotal={setTotal} act1 = {getCart}
                     />
                 )
             })

@@ -21,7 +21,7 @@ export const addCarts= async(x:any)=>{
 }
 
 const checkItems = async(xs:number)=>{
-    console.log(xs,'dsadas')
+   
     let ls =[]
     try {
         const x = localStorage.getItem('cart')
@@ -55,16 +55,15 @@ export const getCarts = async()=>{
     }
 }
 
-export const delCart = async(x:number)=>{
+export const delCart = async(x:string)=>{
     let sd = []
     try {
         const del =  localStorage.getItem('cart')
         if(del){
             const xz = await JSON.parse(del)
             if(xz){
-                const x = await xz.filter((data:any)=>data.id !== x)
-                sd.push(xz)
-                const xs =  JSON.stringify(sd)
+                const xxx = await xz.filter((data:any)=>data.nama !== x)
+                const xs =  JSON.stringify(xxx)
                 localStorage.removeItem('cart')
                 const zx =  localStorage.setItem('cart',xs)
             }
@@ -73,6 +72,7 @@ export const delCart = async(x:number)=>{
         return {message:"Berhasil Menghapus Item dari keranjang",type:'success'}
        
     } catch (error) {
+        console.log(error)
         return {message:"Gagal Menghapus Item dari keranjang",type:'fail'}
     }
 }
